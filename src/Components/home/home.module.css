@@ -1,0 +1,99 @@
+.containerHome {
+  width: 45rem;
+  height: 35rem;
+  background-color: #e5e5e5; /* Fondo base del contenedor */
+  overflow: hidden; /* Para evitar que el gradiente salga del contenedor */
+  position: relative;
+  border-radius: 12px;
+  padding: 1rem;
+}
+
+.containerHome::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: -200px;
+  width: 150%; /* Amplitud suficiente para cubrir */
+  height: 80%;
+  background: #fed766; /* Color de la franja */
+  transform: rotate(70deg); /* Inclinación */
+  z-index: 0; /* Detrás del contenido */
+}
+
+.containerHome .containerContent {
+  position: relative;
+  z-index: 1;
+  display: flex;
+
+  width: 100%;
+  height: 100%;
+}
+
+.containerInfoWithImg {
+  flex-direction: column;
+  display: flex;
+  width: 45%;
+  height: 100%;
+  gap: 12px;
+}
+
+.containerImgHome {
+  width: 15rem;
+  height: 15rem;
+  border-radius: 6px;
+  align-self: flex-start;
+  margin-left: 4.8rem;
+}
+
+.containerImgHome img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.containerInfoHome {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: 18rem;
+  height: 17rem;
+  background-color: #e5e5e5;
+  border-radius: 10px;
+  gap: 10px;
+  padding: 6px;
+}
+
+.containerInfoHome p {
+  font-size: 32px;
+  font-weight: 700;
+  color: #363537;
+  margin: 0;
+  line-height: 42.19px;
+}
+
+.containerInfoHome span {
+  font-weight: 300;
+  font-size: 14px;
+  color: #363537;
+  line-height: 16.41px;
+}
+
+.pClass p {
+  font-weight: 500;
+  text-align: start;
+  font-size: 20px;
+  line-height: 30px;
+}
+
+.containerInfoHome strong {
+  font-weight: 700;
+  text-align: start;
+  color: #363537;
+  font-size: 20px;
+  line-height: 30px;
+}
+
+.containerForms {
+  width: 50%;
+  height: 100%;
+}
