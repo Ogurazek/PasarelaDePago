@@ -1,4 +1,5 @@
 import styles from "./home.module.css"
+import Forms from "../Form/form"
 
 export default function Home() {
     return (
@@ -23,7 +24,7 @@ export default function Home() {
                         </section>
                     </div>
                     <article className={styles.containerForms}>
-                        <input type="text" />
+                        <Forms />
                     </article>
                 </div>
             </article>
