@@ -7,8 +7,8 @@
   color: rgba(255, 255, 255, 0.87);
   background-image: linear-gradient(
     to bottom,
-    #363537,
-    #4b405e,
+    #727174,
+    #695d7e,
     #594d8a,
     #5e5cbb,
     #546def
@@ -49,12 +49,11 @@ button {
   font-size: 1em;
   font-weight: 500;
   font-family: inherit;
-  background-color: #1a1a1a;
   cursor: pointer;
   transition: border-color 0.25s;
 }
 button:hover {
-  border-color: #646cff;
+  border-color: #262c92;
 }
 button:focus,
 button:focus-visible {

@@ -1,6 +1,6 @@
 .containerHome {
   width: 45rem;
-  height: 35rem;
+  height: 33rem;
   background-color: #e5e5e5; /* Fondo base del contenedor */
   overflow: hidden; /* Para evitar que el gradiente salga del contenedor */
   position: relative;
