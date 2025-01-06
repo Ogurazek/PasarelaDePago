@@ -1,7 +1,11 @@
 import styles from "./home.module.css"
 import Forms from "../Form/form"
+import bitcoinUpdate from "../../Hook/BitcoinUpdate"
 
 export default function Home() {
+    //Traigo el valor del Bitcoin en Dolares para mostrarlo
+    const { valueBitcoinInDollars } = bitcoinUpdate()
+
     return (
         <>
             <article className={styles.containerHome}>
@@ -16,9 +20,9 @@ export default function Home() {
                             <div className={styles.pClass}>
                                 <p>Price in BTC</p>
                             </div>
-                            <strong>₿ 0.0028162403</strong>
+                            <strong>₿ {valueBitcoinInDollars > 0 ? valueBitcoinInDollars : "Loading"}</strong>
                             <div className={styles.pClass}>
-                                <p>Price in BTC</p>
+                                <p>Price in USD</p>
                             </div>
                             <strong>$69.00</strong>
                         </section>
