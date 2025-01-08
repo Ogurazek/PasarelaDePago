@@ -8,6 +8,7 @@ export default function Home() {
 
     return (
         <>
+
             <article className={styles.containerHome}>
                 <div className={styles.containerContent}>
                     <div className={styles.containerInfoWithImg}>

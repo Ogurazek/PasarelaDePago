@@ -11,7 +11,7 @@ export default function Forms() {
         cvcCode,
         date,
         onClickSubmit,
-        getCardName } = formLogic()
+        getCardName, } = formLogic()
 
 
 
@@ -28,8 +28,11 @@ export default function Forms() {
                 return "/diners.svg";
         }
     };
+
     return (
         <>
+
+
             <form className={styles.containerForm}>
                 <div className={styles.containerFormSection}>
                     <label htmlFor="">Card Number</label>
@@ -49,6 +52,7 @@ export default function Forms() {
                             placeholder="12/30"
                             onChange={handleGetdateCard}
                             value={date}
+                            maxLength={5}
                         />
                     </section>
                     <label htmlFor="">CVC Code</label>
@@ -57,6 +61,7 @@ export default function Forms() {
                             placeholder="539"
                             onChange={handleGetcvcCode}
                             value={cvcCode}
+                            maxLength={3}
                         />
                     </section>
                 </div>
