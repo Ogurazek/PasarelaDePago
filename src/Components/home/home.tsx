@@ -20,7 +20,7 @@ export default function Home() {
                             <div className={styles.pClass}>
                                 <p>Price in BTC</p>
                             </div>
-                            <strong>₿ {valueBitcoinInDollars > 0 ? valueBitcoinInDollars : "Loading"}</strong>
+                            <strong>₿ {valueBitcoinInDollars > 0 ? valueBitcoinInDollars : "Loading..."}</strong>
                             <div className={styles.pClass}>
                                 <p>Price in USD</p>
                             </div>
