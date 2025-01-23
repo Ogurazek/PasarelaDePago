@@ -5,7 +5,7 @@ FROM node:18
 WORKDIR /app
 
 # 3. Copiar package.json y package-lock.json
-COPY package*.json ./
+COPY package.json package-lock.json ./
 
 # 4. Instalar dependencias
 RUN npm install

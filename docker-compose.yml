@@ -1,0 +1,15 @@
+version: "3.9" # Opcional, pero puedes eliminarlo si usas Docker Compose 2.0+
+
+services:
+  vite-app:
+    build:
+      context: . # Contexto de construcción
+      dockerfile: Dockerfile
+    ports:
+      - "5170:5173"
+    volumes:
+      - .:/app
+      - /app/node_modules # Mantenerlo aquí puede causar conflictos. Si no es necesario, elimínalo.
+    environment:
+      - NODE_ENV=development
+    command: npm run dev

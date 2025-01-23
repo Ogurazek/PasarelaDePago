@@ -1,50 +1,37 @@
-# React + TypeScript + Vite
+# Pasarela de Pago
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este proyecto es una pasarela de pago que valida los datos de tarjetas de crédito, verificando su número, CVC, fecha de expiración y tipo (Visa, Mastercard, Diners Club, American Express, etc.). Utiliza la biblioteca **CreditCard.js** para las validaciones y está desarrollado con **React.js**, **TypeScript**, **HTML**, **CSS**, **Vite** y **Docker**.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Características
 
-## Expanding the ESLint configuration
+- **Validación de Tarjetas**:
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+  - Verifica si el número de la tarjeta es válido.
+  - Comprueba el código CVC y la fecha de expiración.
+  - Identifica automáticamente el tipo de tarjeta (Visa, Mastercard, Diners Club, American Express, etc.).
 
-- Configure the top-level `parserOptions` property like this:
+- **Interfaz de Usuario Amigable**:
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+  - Formularios interactivos con mensajes de error en tiempo real para datos inválidos.
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+- **Despliegue con Docker**:
+  - La aplicación puede ejecutarse fácilmente en un contenedor Docker para mayor portabilidad y consistencia.
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+---
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+## Tecnologías Utilizadas
+
+- **React.js**: Biblioteca principal para construir la interfaz de usuario.
+- **TypeScript**: Para un desarrollo más robusto con tipado estático.
+- **Vite**: Para un entorno de desarrollo rápido y moderno.
+- **HTML y CSS(Module)**: Para la estructura y estilos personalizados.
+- **CreditCard.js**: Biblioteca utilizada para validaciones de tarjetas.
+- **Docker**: Para contenerización y despliegue del proyecto.
+
+---
+
+## Link del Proyecto
+
+Puedes ver el Portfolio aquí ---> https://portfolioeliasperez.vercel.app
