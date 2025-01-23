@@ -49,7 +49,7 @@ export default function formLogic() {
     if (datoGuardado !== "Credit card is invalid!" && isExpirate === true && isSecurity === true) {
       alert("Compra realizada con exito")
     } else {
-      alert("Me parece que hay algo mal... Por favor, reviselo")
+      alert("Me parece que hay algo mal... Por favor, asegurese de que los datos sean correctos")
     }
 
   }
